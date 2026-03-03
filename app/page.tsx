@@ -1,4 +1,3 @@
-import Link from "next/link";
 import CategoryGroup from "./components/CategoryGroup";
 import PageLink from "./components/PageLink";
 
@@ -18,7 +17,13 @@ export default function Home() {
               imgSrc="/tictactoe.png"
               name={"Tic Tac Toe \n(Websockets)"}
             />
+            <PageLink
+              link="https://kentle.shotcrib.com"
+              imgSrc="/kentle.png"
+              name={"Kentle \n(Music Quiz)"}
+            />
           </CategoryGroup>
+  
         </div>
 
       </div>
