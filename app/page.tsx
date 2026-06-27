@@ -50,7 +50,7 @@ export default function Home() {
             />
             <ProjectCard
               projectName="Kentle"
-              projectDescription={`A music quiz app with Kent theme. Playback integrated with Spotify Web playback SDK.\n\nA big passion project for me that I've made 4 diffrent, increasingly better versions of through out the past 2 years. Allways been a huge fan of Kent and when I disscovered that there were no kent-themed music quiz, I decided to make one myself.\n\nNote: Spotify's API is very restrictive and therefore you need to be whitlisted to be able to use it, feel free to email me if you want to try it!`}
+              projectDescription={`A music quiz app with Kent theme. Playback integrated with Spotify Web playback SDK.\n\nA big passion project for me that I've made 4 diffrent, increasingly better versions of through out the past 2 years. Always been a huge fan of Kent and when I discovered that there were no kent-themed music quiz, I decided to make one myself.\n\nNote: Spotify's API is very restrictive and therefore you need to be whitlisted to be able to use it, feel free to email me if you want to try it!`}
               imgSrc="/kentle.png"
               techStack={[
                 "https://img.shields.io/badge/Spotify-1DB954?logo=spotify&logoColor=white",
@@ -64,7 +64,7 @@ export default function Home() {
             />
             <ProjectCard
               projectName="Chinese lyrics app"
-              projectDescription={`A website that let's you translate chinese song lyrics into pinyin and english and let's user toggle what languages to display.\n\nA tiny personal tool for me to have a library of the pinyin lyrics of a lot of the chinese song i like. Also a helpful tool to help me along the way of learning mandarin.`}
+              projectDescription={`A website that let's you translate chinese song lyrics into pinyin and english and let's user toggle what languages to display.\n\nA tiny personal tool for me to have a library of the pinyin lyrics of a lot of the chinese song I like. Also a helpful tool to help me along the way of learning mandarin.`}
               imgSrc="/lyrics.png"
               techStack={[
                 "https://img.shields.io/badge/Postgres-316192?logo=postgresql&logoColor=white",
@@ -87,7 +87,7 @@ export default function Home() {
             />
             <ProjectCard
               projectName="Tic Tac Toe with Websocket"
-              projectDescription={`A real-time multiplayer Tic-Tac-Toe game using WebSockets.\n\nWanted a simple and fun project to learn websockets. Tic-tac-toe was that, as well as a project that i could actually share and play with friends!`}
+              projectDescription={`A real-time multiplayer Tic-Tac-Toe game using WebSockets.\n\nWanted a simple and fun project to learn websockets. Tic-tac-toe was that, as well as a project that I could actually share and play with friends!`}
               imgSrc="/tictactoe.png"
               techStack={[
                 "https://img.shields.io/badge/Socket.io-010101?logo=socketdotio&logoColor=white",
