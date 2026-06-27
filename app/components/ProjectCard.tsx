@@ -7,7 +7,7 @@ interface ProjectCardProps {
   projectDescription: string;
   techStack: string[];
   githubUrl: string;
-  websiteUrl: string;
+  websiteUrl?: string;
 }
 
 export default function ProjectCard({
@@ -38,7 +38,7 @@ export default function ProjectCard({
             {projectName}
           </h3>
 
-          <p className="text-gray-300 text-sm leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed whitespace-pre-line">
             {projectDescription}
           </p>
 
@@ -76,20 +76,21 @@ export default function ProjectCard({
               </svg>
               GitHub
             </Link>
-
-            <Link
-              href={websiteUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center gap-2 py-2 rounded-xl text-sm font-medium text-zinc-400 bg-white/6 border border-white/[0.07] hover:bg-white/10 hover:text-white transition-all duration-200"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="10" />
-                <line x1="2" y1="12" x2="22" y2="12" />
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-              </svg>
-              Live Site
-            </Link>
+            {websiteUrl &&
+              <Link
+                href={websiteUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 flex items-center justify-center gap-2 py-2 rounded-xl text-sm font-medium text-zinc-400 bg-white/6 border border-white/[0.07] hover:bg-white/10 hover:text-white transition-all duration-200"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+                Live Site
+              </Link>
+            }
           </div>
 
         </div>
